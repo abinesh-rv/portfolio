@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import profileImage from "../assets/profile.jpg"
 import {BsInstagram,BsGithub,BsWhatsapp} from "react-icons/bs"
 import {BiLogoLinkedin,BiDownload} from "react-icons/bi"
+import CV from "../assets/ABINESH_PERSONAL.pdf"
 
 
 function Hero({heroRef}) {
@@ -23,7 +24,7 @@ function Hero({heroRef}) {
                     <a href="https://github.com/abinesh-rv" target="_blank" rel="noreferrer noopener" ><div className='social-icons'><BsGithub/></div></a>
                     <a href="https://wa.me/919843810922" target="_blank" rel="noreferrer noopener" ><div className='social-icons'><BsWhatsapp/></div></a>  
                 </div>
-                <div className='btn-one text-cyan-500 hover:text-white flex gap-2 w-fit items-center self-center text-3xl p-3'><span className=""><BiDownload/></span><span className='tracking-widest normal-case'>Download CV</span></div>
+                <div className='btn-one text-cyan-500 hover:text-white flex gap-2 w-fit items-center self-center text-3xl p-3'><span className=""><BiDownload/></span><a href={CV} target="_blank" rel="noreferrer noopener" className='tracking-widest normal-case'>Download CV</a></div>
             </div>
 
            
