@@ -18,8 +18,8 @@ const skillsData = [
     {img:redux,name:"redux"},
     {img:nodejs,name:"nodeJs"},
     {img:mongoDB,name:"mongoDB"},
-    {img:cPlus,name:"C++"},
     {img:mysql,name:"MySQL"},
+    {img:cPlus,name:"C++"},
     {img:python,name:"python"}
     ]
 
