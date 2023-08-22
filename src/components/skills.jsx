@@ -8,8 +8,9 @@ function Skills({skillsRef}) {
          <div className="flex flex-wrap gap-10 justify-around ">
             {skillsData.map((e) => {
                 return(
-                <div className='rounded-md p-5 border-2 border-cyan-400 transition-colors duration-300 ease-in-out cursor-pointer hover:border-white'>
-                  <img src={e} className='w-16 h-16'/>
+                <div className="space-y-2">
+                  <img src={e.img} className='w-16 h-16'/>
+                  <div className='text-cyan-400 text-center'>{e.name}</div>
                 </div>
             )})}
          </div>

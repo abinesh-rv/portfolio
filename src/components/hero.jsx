@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import profileImage from "../assets/profile.jpg"
+import profileImage from "../assets/profile2.jpeg"
 import {BsInstagram,BsGithub,BsWhatsapp} from "react-icons/bs"
 import {BiLogoLinkedin,BiDownload} from "react-icons/bi"
 import CV from "../assets/ABINESH_PERSONAL.pdf"
@@ -17,7 +17,7 @@ function Hero({heroRef}) {
             <div className='flex gap-5 flex-col items-center  justify-center'>
                 <div className='text-cyan-500 text-3xl pl-4 self-start'>I'm</div>
                 <div className='profile_name text-[70px] md:text-[100px]'>abinesh</div>
-                <div className='text-4xl tracking-wider text-center'><span className='text-cyan-500'>S</span>oftware <span className='text-cyan-500'>D</span>evloper</div>
+                <div className='text-4xl tracking-wider text-center'><span className='text-cyan-500'>S</span>oftware <span className='text-cyan-500'>D</span>eveloper</div>
                 <div className='flex gap-4 justify-evenly mt-4'>
                     <a href="https://www.instagram.com/abi_lancer_24/" target="_blank" rel="noreferrer noopener" ><div className='social-icons'><BsInstagram/></div></a>
                     <a href="https://www.linkedin.com/in/abineshr24" target="_blank" rel="noreferrer noopener" ><div className='social-icons'><BiLogoLinkedin/></div></a>
