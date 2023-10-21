@@ -26,15 +26,23 @@ function About({aboutRef}) {
         <div className=' lg:w-[45%] w-full lg:h-[70vh] space-y-3 flex flex-col justify-center'>
            <div className='p-3  rounded-md border-2 border-black space-y-2'>
              <div className='capitalize text-3xl font-semibold tracking-wider'>education</div>
-               <div>BE in Information Science and Engineering (2020-2024)</div>
+               <div>B.E. in Information Science and Engineering (2020-2024)</div>
                <div>CPGA : 8.88</div>
                <div className='capitalize text-end'>- kumaraguru college of technology, Coimbatore</div>
            </div>
            <div className='p-3  rounded-md border-2 border-black space-y-2'>
              <div className='capitalize text-3xl font-semibold tracking-wider'>Experience</div>
+              <div>
                <div className='text-xl'>Taxbee</div>
-               <div>Worked as a frontend developer intern</div>
+               <div>Worked as a frontend developer and developed Taxbee portfolio website</div>
                <div className='capitalize text-end'>- Jan 2022 to May 2022</div>
+              </div>
+              <div>
+               <div className='text-xl'>Exaslate</div>
+               <div>Working as a part-time remote intern with Exaslate and
+               developed multiple webpages and components</div>
+               <div className='capitalize text-end'>- Sept 2023 to Present</div>
+               </div>
            </div>
         </div>
         </div>
