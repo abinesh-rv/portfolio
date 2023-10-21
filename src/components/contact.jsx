@@ -1,17 +1,16 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser';
+import { Toaster,toast } from 'react-hot-toast';
 
 function Contact({contactRef}) {
-
   const form  =useRef()
-
   const handleMail = (e) => {
     e.preventDefault()
     emailjs.sendForm('service_8qnqvj8', 'template_iw7wrh2', form.current, 'ldTx6esFKdNqM1vqb')
-    .then((result) => {
-        console.log(result.text);
+    .then((response) => {
+      toast.success("request has been sent")
     }, (error) => {
-        console.log(error.text);
+      toast.error("request not sent, Please try again later")
     });
     e.target.from_name.value=""
     e.target.from_email.value=""
@@ -21,6 +20,7 @@ function Contact({contactRef}) {
 
   return (
     <div ref={contactRef}  className='mt-32 text-white pb-10'>
+      <Toaster position="bottom-right"/>
     <div className="capitalize text-[50px] w-fit mx-auto font-bold mb-10 ">contact</div>
     <div className=" p-4 w-full mx-auto border-2 items-center rounded-md justify-around md:justify-center gap-4 border-cyan-500 mt-10 flex flex-col md:flex-row ">
         <div className=' md:w-[40%] w-full  space-y-6 text-center md:text-left'>
